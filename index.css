@@ -3,6 +3,8 @@ body {
     font-family: 'Inter', sans-serif;
     padding: 0px;
     margin: 0px;
+    scroll-behavior: smooth;
+    scroll-snap-type: x;
   }
   nav {
     border-bottom: 1px solid #000000;
@@ -25,14 +27,15 @@ body {
     align-items: center;
     letter-spacing: -5.292px;
     flex-wrap: wrap;
+    width: 100vw;
   }
   .main_section > header {
-    width: 55%;
+    width: 60%;
     padding-left: 50px;
   }  
   .main_section > div {
     border-left: 1px solid #000000;
-    width: 41.55%;
+    width: 36.55%;
     height: 100%;
     text-align: end;
     padding-right: 1px;
