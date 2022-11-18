@@ -1,5 +1,5 @@
 
-let str = '* Create * Develop * Art * Code * Artist * Instructor * Sketch * Design *  UI *  U X ';
+let str = '* Create * Develop * Art * Code * Artist * Instructor * Sketch * Design *  UI *  UX ';
 
 let startAngle =    0;   
 let distanceAngle = 360;  
@@ -12,10 +12,10 @@ let angle = 0;
 
 
 function setup() {
-  let canvas = createCanvas(windowWidth/3, windowHeight+100);
+  let canvas = createCanvas(windowWidth/2, windowHeight);
   canvas.parent('p5_sketch')
-  radius = min(width,height) / 3;
-  textSize(radius/6);
+  radius = min(width,height) / 4;
+  textSize(radius/8);
   textAlign(CENTER, BASELINE);
 }
 
