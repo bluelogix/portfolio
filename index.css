@@ -31,7 +31,7 @@ body {
     font-style: normal;
     font-weight: 100;
     font-size: clamp(3rem,1rem + 10vw,5rem);
-    line-height: 110px;
+    /* line-height: 100px; */
     letter-spacing: -5.292px;
   }
 
@@ -59,7 +59,8 @@ body {
     font-size: 3em;
   }
   .about > p {
-    font-size: 2rem;
+    font-size: clamp(.5rem,1rem + 5vw,1.5rem);
+    font-family: 'Courier New', Courier, monospace;
     font-weight: lighter;
   }
 
@@ -164,7 +165,8 @@ body {
     background:#000000;
     color:white;
     padding: 50px;
-    font-size: 4.7em;
+    font-size: clamp(3rem,1rem + 10vw,5rem);
+
   
   
   }
@@ -182,10 +184,22 @@ body {
     padding: 15px;
   } 
 
-  @media (max-width: 800px) {
+  @media (max-width: 700px) {
+    .header  {
+      text-align: center;
+    }
     #p5_sketch {
       display: none;
     }
+    .header {
+      padding:2rem;
+    }
+    .design_section:nth-child(1) {
+      text-align: center;
+      padding:0
+    }
+
+ 
   }
 
 
