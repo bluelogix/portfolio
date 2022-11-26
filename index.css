@@ -39,7 +39,7 @@ body {
     border-left: 1px solid #000000;
     background-color: #000000;
     align-self: center;
-
+    width: 100%;
   }
  
   .header h1{
