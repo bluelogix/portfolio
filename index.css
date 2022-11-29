@@ -8,6 +8,7 @@ body {
   }
   nav {
     border-bottom: 1px solid #000000;
+    background-color: #ffffff;
     padding-right: 20px;
   }
   
@@ -125,7 +126,12 @@ body {
     letter-spacing: -0.1vw;
   }
  
-
+  #iphone_mockup {
+    width: 40%;
+    position: absolute;
+    bottom: 0;
+    left: 30%;
+  }
    
    #item-0 {
     grid-row-start: 1;
@@ -135,7 +141,7 @@ body {
     
   }
   #item-1 {
-  
+    position: relative;
     grid-row-start: 1;
     grid-column-start: 1;
     grid-row-end: 3;
