@@ -7,10 +7,6 @@ let radius;
 let font;
 let angle = 0;
 
-
-
-
-
 function setup() {
   let canvas = createCanvas(windowWidth/2, windowHeight);
   canvas.parent('p5_sketch')
@@ -32,15 +28,15 @@ function draw() {
  
   push();
   translate(width/2, height/2);      
-  rotate(radians(startAngle));         // rotate to where text starts
+  rotate(radians(startAngle));         
   rotate(angle)
-  for (let i=0; i<str.length; i++) {   // go through each letter in the text
+  for (let i=0; i<str.length; i++) {   
     push();
-    rotate(i * angleBetweenLetters);   // rotate to angle
-    translate(0,-radius);              // and translate to edge of circle
+    rotate(i * angleBetweenLetters);  
+    translate(0,-radius);              
     fill(255);
     noStroke();
-    text(str[i], 0,0);                 // draw character at location
+    text(str[i], 0,0);                 
     pop();
   }
   pop();
