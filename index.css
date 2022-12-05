@@ -161,25 +161,39 @@ body {
     /* letter-spacing: -0.1vw; */
   } 
   
-   footer {
+   .footer{
     background:#000000;
     color:white;
     padding: 50px;
-    font-size: clamp(3rem,1rem + 10vw,5rem);
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    justify-content: space-around;
+  }
+  .footer h4 {
+    font-size: clamp(3rem,1rem + 10vw,4rem);
+  }
+  form p{
+    font-size: clamp(1.3rem,1rem + 10vw,.01rem);
+  }
+  input,textarea {
+    outline: none;
+    background-color: #000;
+    border: none;
+    border-bottom: 2px solid #FDF4F4;
+    color: #ffffff;
+    width: 10rem;
+  }
 
-  }
-  h4 {
-    margin-bottom: 0;
-  }
   h4 > span {
     color: #FDF4F4;
   }
   button {
     background: #FDF4F4;
     border: 1px solid #000000;
-    font-size: 1.3rem;
+    font-size: 1rem;
     border-radius: 10px;
-    padding: 15px;
+    padding: 10px;
     color: #000;
   } 
 
@@ -204,6 +218,12 @@ body {
   @media (min-width: 480px) and (max-width: 728px) {
     #item-3{
       grid-column: 1/4;
+      }
+      .footer {
+        flex-direction: column;
+      }
+      .footer h4{
+        text-align:center;
       }
   
   }
