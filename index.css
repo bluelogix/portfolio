@@ -197,6 +197,9 @@ body {
     color: #000;
   } 
 
+  .socials #dribble{
+    width:2.5rem;
+  }
   @media (max-width: 728px) {
     .header  {
       text-align: center;
@@ -247,6 +250,9 @@ nav svg {
   form {
     display: flex;
     flex-direction: column;
+  }
+  .socials {
+    margin-top: 1rem;
   }
 }
   
