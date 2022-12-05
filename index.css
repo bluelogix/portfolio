@@ -82,17 +82,24 @@ body {
   .about  {
     padding: 50px;
     font-size: 3em;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: row;
+    justify-content: space-between;
   }
-  .about > p {
-    font-size: clamp(.5rem,1rem + 5vw,1.5rem);
-    font-weight: lighter;
-  }
-
   .project_section > h2 {   
     color:#000000;
     font-size: 3.5em;
     text-align: center;
 
+  }
+  .about > p {
+    font-size: clamp(.5rem,1rem + 5vw,1.5rem);
+    font-weight: lighter;
+    width:40%;
+    padding-right: 1rem;
+    text-align: left;
   }
   .design_section {
     font-size: 2em;
@@ -200,6 +207,7 @@ body {
   .socials #dribble{
     width:2.5rem;
   }
+
   @media (max-width: 728px) {
     .header  {
       text-align: center;
@@ -214,6 +222,10 @@ body {
     .design_section:nth-child(1) {
       text-align: center;
       padding:0
+    }
+    .menu-item {
+      transform: translateX(0%);
+      opacity: 0;
     }
   
 
@@ -230,19 +242,24 @@ body {
   .design_section_start img {
     width: 25%;
   }
- 
-}
-@media (max-width: 600px) {
-  nav ol {
-       
-    display: none;
+
 
 }
-nav svg {
-  display: block;
-}
-}
+
 @media (min-width: 300px) and (max-width: 728px) {
+  .design_section_start {
+    padding: 1rem;
+  }
+  .about {
+    flex-direction: column;
+  }
+  .about h2 {
+    text-align: center;
+  }
+  .about p {
+    width: 100%;
+    text-align: center;
+  }
   .footer {
     flex-direction: column;
     text-align:center;
@@ -254,6 +271,17 @@ nav svg {
   .socials {
     margin-top: 1rem;
   }
+  nav svg {
+    display: block;
+    cursor: pointer;
+  }
+  .main-nav.show .menu-item  {
+    align-items: center;
+    justify-content: space-around;
+    transition: all 1s ease;
+    opacity: 1;
+    font-size: .8rem;
+
 }
-  
+}
     
