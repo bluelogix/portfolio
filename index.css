@@ -243,8 +243,10 @@ nav svg {
   .footer {
     flex-direction: column;
     text-align:center;
-
-    
+  }
+  form {
+    display: flex;
+    flex-direction: column;
   }
 }
   
