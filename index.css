@@ -219,13 +219,6 @@ body {
     #item-3{
       grid-column: 1/4;
       }
-      .footer {
-        flex-direction: column;
-      }
-      .footer h4{
-        text-align:center;
-      }
-  
   }
 @media (min-width: 600px) {
   .header h1 {
@@ -246,6 +239,13 @@ nav svg {
   display: block;
 }
 }
- 
+@media (min-width: 300px) and (max-width: 728px) {
+  .footer {
+    flex-direction: column;
+    text-align:center;
+
+    
+  }
+}
   
     
